@@ -97,7 +97,10 @@ struct AdvancedMarkerMapView: UIViewRepresentable {
       let markerSpacing: CLLocationDegrees = 0.001
       let centerCoordinate = CLLocationCoordinate2D(latitude: 37.422, longitude: -122.084)
       
+      print("Starting to add \(markerTypes.count) markers...")
+      
       for (index, type) in markerTypes.enumerated() {
+        print("Adding marker #\(index + 1): \(type)")
         let longitude = centerCoordinate.longitude + (Double(index) - 2.0) * markerSpacing
         let position = CLLocationCoordinate2D(latitude: centerCoordinate.latitude, longitude: longitude)
         
@@ -106,7 +109,14 @@ struct AdvancedMarkerMapView: UIViewRepresentable {
         marker.map = mapView
         
         markers.append(marker)
+        
+        // Add small delay between markers to help with memory allocation
+        if index < markerTypes.count - 1 {
+          Thread.sleep(forTimeInterval: 0.1)
+        }
       }
+      
+      print("Finished adding all markers. Total: \(markers.count)")
     }
   }
 
