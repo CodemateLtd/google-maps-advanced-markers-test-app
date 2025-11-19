@@ -51,3 +51,8 @@ This log message indicates that the `GMSPinImage` marker failed to render due to
 ## What You Should See
 
 On devices that support advanced markers, you should see all 5 markers displayed in a row. If markers #3 and #4 (the GMSPinImage markers) are missing, this demonstrates the known rendering issue.
+
+### Example screenshot 
+Screenshot with 2 missing markers (mapID with cloud-based styling used):
+
+<img width="400"  alt="Simulator Screenshot - iPhone 17 Pro - 2025-11-19 at 15 11 08" src="https://github.com/user-attachments/assets/efaaa0e3-92b0-45fe-bc96-a1afbb94311d" />
