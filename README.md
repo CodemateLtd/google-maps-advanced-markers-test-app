@@ -2,6 +2,10 @@
 
 > [!WARNING]
 > **Deprecated:** The `GMSPinImage` marker visibility issue described below is fixed in the latest Maps SDK for iOS (11.2.0).
+> 
+> Fixed view:
+>
+> <img width="250" alt="Screenshot iPhone 16 Pro 28 09 2026 at 16 18 09" src="https://github.com/user-attachments/assets/623a5d87-5137-485d-a37d-9da0b1430ca5" />
 
 This app demonstrates how 5 different types of advanced markers are rendered on a map using the Google Maps SDK for iOS.
 
