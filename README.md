@@ -1,5 +1,8 @@
 # Google Maps Advanced Markers Test
 
+> [!WARNING]
+> **Deprecated:** The `GMSPinImage` marker visibility issue described below is fixed in the latest Maps SDK for iOS (11.2.0).
+
 This app demonstrates how 5 different types of advanced markers are rendered on a map using the Google Maps SDK for iOS.
 
 ## Setup
